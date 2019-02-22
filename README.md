@@ -42,7 +42,7 @@ Maupassant theme, ported to Hugo.
 
 ```bash
 cd <YOUR Bolg Root Dir>
-git clone https://github.com/rujews/maupassant-hugo themes/maupassant
+git clone https://github.com/skydamon/maupassant-hugo themes/maupassant
 ```
 
 ## 配置
@@ -259,4 +259,4 @@ disablePathToLower = true
 + Wordpress：https://github.com/iMuFeng/maupassant/
 + Ghost: https://github.com/LjxPrime/maupassant/
 + Hexo: https://github.com/tufu9441/maupassant-hexo
-+ Hugo: https://github.com/rujews/maupassant-hugo
++ Hugo: https://github.com/skydamon/maupassant-hugo

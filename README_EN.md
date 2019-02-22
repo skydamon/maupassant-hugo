@@ -16,7 +16,7 @@ A simple Hugo template with great performance on different devices, ported from 
 
 ```bash
 cd <YOUR Bolg Root Dir>
-git clone https://github.com/rujews/maupassant-hugo themes/maupassant
+git clone https://github.com/skydamon/maupassant-hugo themes/maupassant
 ```
 
 ## Configuration
@@ -143,4 +143,4 @@ Looking forward to your pull request.
 + Wordpress：https://github.com/iMuFeng/maupassant/
 + Ghost: https://github.com/LjxPrime/maupassant/
 + Hexo: https://github.com/tufu9441/maupassant-hexo
-+ Hugo: https://github.com/rujews/maupassant-hugo
++ Hugo: https://github.com/skydamon/maupassant-hugo
