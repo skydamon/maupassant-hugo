@@ -1,7 +1,7 @@
 {{ if isset .Site.Params "cc" }}
 <div class="post-meta" style="word-break:break-all">
     <ul class="widget-list">
-        <li>原始作者：<a rel="author"
+        <li>作者：<a rel="author"
                 href="{{ .Site.BaseURL}}">{{ if isset .Site.Author "name" }}{{.Site.Author.name}}{{ else }}{{.Site.Title}}{{ end }}</a>
         </li>
         <li>原文链接：<a href="{{ .Permalink}}">{{ .Permalink}}</a></li>
