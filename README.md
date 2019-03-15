@@ -142,6 +142,7 @@ theme = "maupassant"
 #### 添加GA分析统计
 
 该主题已经支持了GA分析统计，只需要在`config.toml`配置里加入如下配置即可。
+
 ```toml
 googleAnalytics = "GA ID"
 ```
@@ -167,6 +168,7 @@ type: archives
 ```toml
 disqusShortname = "yourdiscussshortname"
 ```
+
 替换成你自己的Disqus名字即可。
 
 #### 自定义文章摘要
@@ -192,6 +194,7 @@ summaryLength = 140
 ```
 
 对于以上issueTerm可以选择的配置有
+
 1. `pathname` 以路径的方式，推荐选项，这样你换域名的时候就不用担心评论找不到了
 2. `url` 全链接URL路径的方式。
 3. `title` 按页面title标题的方式。
@@ -209,9 +212,12 @@ summaryLength = 140
 ```
 
 如果只想记录，不想显示，可以修改为
+
+```toml
 [params.busuanzi]
   rocord = true
   show = false
+```
 
 #### 禁止分类的名称转为小写
 
@@ -235,7 +241,7 @@ disablePathToLower = true
 
 #### 自定义CSS&JS
 
-```
+```toml
 [params]
   # 这里我存放在了主题的static文件夹里，根目录的似乎也可以
   customCSS = ['douban.css', 'other.css']
@@ -259,10 +265,12 @@ disablePathToLower = true
 
 需要在config.toml中添加如下配置
 
+```toml
 [params.cc]
     name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
     link = "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"
     types = ["blog","posts"]
+```
 
 types制定了添加版权声明的文章类型，可以添加多个。文件类型就是你在content下的子目录名字。
 
