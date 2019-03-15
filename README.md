@@ -12,7 +12,7 @@ Maupassant theme, ported to Hugo.
 
 ## 功能特性
 
-1. 最近发表的文章支持，显示最近的10篇 
+1. 最近发表的文章支持（可选），显示最近的10篇
 2. 分类支持，并且可以显示分类内的文章数量
 3. 标签云支持
 4. 一键回到页面顶部
@@ -20,7 +20,7 @@ Maupassant theme, ported to Hugo.
 6. 自定义菜单支持，不限个数，自定义排序
 7. 自定义友情链接支持
 8. 支持文章按年份日期进行归档
-9. 支持GA分析统计
+9.  支持GA分析统计
 10. sitemap站点地图
 11. 代码高亮、代码行号
     * markup、css、clike、javascript、c、csharp、bash、cpp
@@ -37,6 +37,7 @@ Maupassant theme, ported to Hugo.
 19. utteranc评论
 20. 部分自定义的shortcode
 21. 文章自定义摘要
+22. 版权声明
 
 ## 下载安装
 
@@ -69,6 +70,7 @@ theme = "maupassant"
   subtitle = "专注于Android、Java、Go语言(golang)、移动互联网、项目管理、软件架构"
   keywords = "golang,go语言,go语言笔记,飞雪无情,java,android,博客,项目管理,python,软件架构,公众号,小程序"
   description = "专注于IT互联网，包括但不限于Go语言(golang)、Java、Android、Python、项目管理、抖音分析、软件架构等"
+  recentPost = true
 ```
 
 基本配置大家都比较熟悉，这是我的博客的配置，仅供参考。
@@ -165,6 +167,7 @@ type: archives
 ```toml
 disqusShortname = "yourdiscussshortname"
 ```
+替换成你自己的Disqus名字即可。
 
 #### 自定义文章摘要
 
@@ -172,7 +175,7 @@ disqusShortname = "yourdiscussshortname"
 
 ```toml
 # 默认是70
-summaryLength = 140 
+summaryLength = 140
 ```
 
 #### utteranc
@@ -187,6 +190,7 @@ summaryLength = 140
     issueTerm = "pathname"  #表示你选择以那种方式让github issue的评论和你的文章关联。
     theme = "github-light" # 样式主题，有github-light和github-dark两种
 ```
+
 对于以上issueTerm可以选择的配置有
 1. `pathname` 以路径的方式，推荐选项，这样你换域名的时候就不用担心评论找不到了
 2. `url` 全链接URL路径的方式。
@@ -199,11 +203,15 @@ summaryLength = 140
 该主题支持不蒜子这个极简的页面计数器支持，如果要启用不蒜子，可以在`config.toml`里添加如下配置即可.
 
 ```toml
-[params]
-  busuanzi = true
+[params.busuanzi]
+  rocord = true
+  show = true
 ```
 
-替换成你自己的Disqus名字即可。
+如果只想记录，不想显示，可以修改为
+[params.busuanzi]
+  rocord = true
+  show = false
 
 #### 禁止分类的名称转为小写
 
@@ -246,6 +254,23 @@ disablePathToLower = true
 ```
 
 * youku（youku.html）
+
+### 版权声明配置
+
+需要在config.toml中添加如下配置
+
+[params.cc]
+    name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
+    link = "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"
+    types = ["blog","posts"]
+
+types制定了添加版权声明的文章类型，可以添加多个。文件类型就是你在content下的子目录名字。
+
+可以直接将上面的代码复制粘贴到config.toml中，也可以根据需要前往官网<https://creativecommons.org>选择合适自己的许可协议，然后替换name和link的内容即可。
+
+### 关闭最近文章模块
+
+在config.toml将rencentPost的值改为false，或者直接删除recentPost参数。
 
 ## 贡献
 
