@@ -1,11 +1,12 @@
 # Maupassant
+
 Maupassant theme, ported to Hugo.
 
 预览效果:[胡刘郏的技术博客](http://www.huliujia.com)
 
 一款非常简洁、性能高的Hugo主题，适配不同的设备（PC，Mobile等）。
 
-当前主题fork 自 [flysnow](https://github.com/flysnow/maupassant-hugo) ，绝大部分特性来自于flysnow，本人根据个人喜好做了一些定制。来自flysnow的特性请看[flysnow README](README_flysnow.md)
+当前主题fork 自 <https://github.com/rujews/maupassant-hugo> ，绝大部分特性来自于rujews，本人根据个人喜好做了一些定制。来自rujews的特性请看[rujews README](README_flysnow.md)
 
 基本配置
 
@@ -26,7 +27,7 @@ preserveTaxonomyNames = true
     subtitle = "Stay hungry. Stay foolish."
     keywords = "linux,C++,C,后台开发,操作系统,数据结构,算法,计算机网络"
     description = ""
-    recentPost = fals
+    recentPost = false
 ```
 
 # 本分支定制功能
@@ -78,7 +79,7 @@ preserveTaxonomyNames = true
 
 types指定了添加版权声明的文章类型，可以添加多个。文件类型就是你在content下的子目录名字。不在types中的文章底部不会显示版权声明
 
-可以直接将上面的代码复制粘贴到config.toml中，也可以根据需要前往官网https://creativecommons.org选择合适自己的许可协议，然后替换name和link的内容即可。
+可以直接将上面的代码复制粘贴到config.toml中，也可以根据需要前往官网<https://creativecommons.org>选择合适自己的许可协议，然后替换name和link的内容即可。
 
 ## 其他定制内容
 
