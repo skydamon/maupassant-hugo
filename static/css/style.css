@@ -285,7 +285,7 @@ textarea {
     color:#555;
     text-align:left;
     /**font:bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;**/
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 .post-title a, .keyword {
@@ -363,8 +363,11 @@ textarea {
     color:#444;
     padding-top:27px;
 }
-.post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6 {
+.post-content h2, .post-content h4, .post-content h6 {
     color: #ba3925;
+}
+.post-content h3, .post-content h5{
+    color: #555;
 }
 .page-content{
     padding-top: 40px;
@@ -621,7 +624,7 @@ textarea.textarea {
     padding:10px 40px 10px 0;
 }
 .post-content h2, .comment-content h2 {
-    font-size:1.28571em;
+    font-size:1.5em;
 }
 .post-content img, .comment-content img {
     max-width:100%;
@@ -1075,3 +1078,29 @@ table tr th, table tr td {
 #TableOfContents li {
     list-style-type: none; 
 }
+
+
+#Liujia BEGIN
+.post-content h3{
+    font-size: 1.2em;
+}
+
+.post-content h4{
+    font-size: 1.1em;
+    font-weight:normal;
+}
+
+.post-content h5{
+    font-size: 1em;
+}
+
+.post-content h6{
+    font-size: 1em;
+    font-weight:normal;
+}
+
+#homepage {
+    font-size:1.5em;
+}
+
+#Liujia End/
