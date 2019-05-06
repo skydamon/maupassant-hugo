@@ -3,9 +3,11 @@
         {{ partial "search_form" . }}
     </section>
     
+    {{ if not .IsHome }}
     <section class="widget">
         {{ partial "recent_post" . }}
     </section>
+    {{ end }}
 
     {{ partial "ads" . }}
 
